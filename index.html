@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Moments | Your Guide to Aesthetic Matcha Lifestyle</title>
+    <meta name="description" content="Discover the beauty of matcha with aesthetic recipes, wellness tips, and lifestyle inspiration. Your feminine guide to matcha culture and mindful living.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #F7DCDA;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: #516345; font-family: 'Playfair Display', serif; font-size: 1.8rem;">
+                🍃 Matcha Moments
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: #516345;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="index.html" style="color: #516345;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="blog.html" style="color: #516345;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="recipes.html" style="color: #516345;">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="about.html" style="color: #516345;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="contact.html" style="color: #516345;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="crm/login.php" style="color: #516345;" title="Admin Access">
+                            <i class="fas fa-user-shield"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center" style="background: linear-gradient(135deg, #F7DCDA 0%, #FFF8F0 100%); min-height: 100vh; padding-top: 80px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #516345; font-family: 'Playfair Display', serif;">
+                        Welcome to Your <span style="color: #939D7A;">Matcha Journey</span>
+                    </h1>
+                    <p class="lead mb-4" style="color: #516345; font-size: 1.25rem;">
+                        Discover the aesthetic world of matcha through mindful recipes, wellness wisdom, and beautiful lifestyle inspiration. Let's create magical matcha moments together.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="blog.html" class="btn btn-lg px-4 py-3 rounded-pill" style="background-color: #516345; color: white; border: none; transition: all 0.3s ease;">
+                            <i class="fas fa-leaf me-2"></i>Explore Blog
+                        </a>
+                        <a href="recipes.html" class="btn btn-outline-primary btn-lg px-4 py-3 rounded-pill" style="border-color: #516345; color: #516345; transition: all 0.3s ease;">
+                            <i class="fas fa-heart me-2"></i>View Recipes
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="hero-image-container position-relative">
+                        <div class="hero-image rounded-circle mx-auto" style="width: 400px; height: 400px; background: linear-gradient(45deg, #939D7A, #516345); display: flex; align-items: center; justify-content: center; box-shadow: 0 20px 40px rgba(81, 99, 69, 0.2);">
+                            <i class="fas fa-leaf" style="font-size: 150px; color: #F7DCDA;"></i>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-circle" style="position: absolute; top: 20px; right: 20px; width: 60px; height: 60px; background-color: #F7DCDA; border-radius: 50%; opacity: 0.8;"></div>
+                            <div class="floating-circle" style="position: absolute; bottom: 30px; left: 30px; width: 40px; height: 40px; background-color: #939D7A; border-radius: 50%; opacity: 0.6;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 pricing-section" style="background: linear-gradient(135deg, #FFF8F0 0%, #FFFFFF 100%);">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3" style="color: #516345; font-family: 'Playfair Display', serif;">Premium Matcha Quality</h2>
+                <p class="lead" style="color: #939D7A;">Discover authentic Japanese matcha in different grades for every need and occasion</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <!-- Culinary Grade -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card h-100">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Culinary Grade</h3>
+                            <div class="pricing-price">
+                                <span class="currency">$</span><span class="price-amount">35</span>
+                                <div class="pricing-period">100g</div>
+                            </div>
+                            <p class="text-muted">Perfect for cooking & baking</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>Strong matcha flavor</li>
+                                <li>Ideal for recipes</li>
+                                <li>100g premium powder</li>
+                                <li>Vibrant green color</li>
+                                <li>Best value for cooking</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-cta">
+                            <a href="contact.html" class="btn btn-outline-primary w-100 rounded-pill">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Grade -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card h-100">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Premium Grade</h3>
+                            <div class="pricing-price">
+                                <span class="currency">$</span><span class="price-amount">45</span>
+                                <div class="pricing-period">50g</div>
+                            </div>
+                            <p class="text-muted">Daily drinking quality</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>Balanced flavor profile</li>
+                                <li>Perfect for daily use</li>
+                                <li>50g premium powder</li>
+                                <li>Great nutrition value</li>
+                                <li>Smooth taste</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-cta">
+                            <a href="contact.html" class="btn btn-outline-primary w-100 rounded-pill">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ceremonial Grade -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card h-100 featured">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Ceremonial Grade</h3>
+                            <div class="pricing-price">
+                                <span class="currency">$</span><span class="price-amount">65</span>
+                                <div class="pricing-period">30g</div>
+                            </div>
+                            <p class="text-muted">Traditional tea ceremony</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>Youngest tea leaves</li>
+                                <li>Smooth & sweet taste</li>
+                                <li>30g ceremonial powder</li>
+                                <li>Premium quality</li>
+                                <li>Traditional preparation</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-cta">
+                            <a href="contact.html" class="btn btn-primary w-100 rounded-pill">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organic Ceremonial -->
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="pricing-card h-100">
+                        <div class="pricing-header">
+                            <h3 class="pricing-title">Organic Ceremonial</h3>
+                            <div class="pricing-price">
+                                <span class="currency">$</span><span class="price-amount">85</span>
+                                <div class="pricing-period">30g</div>
+                            </div>
+                            <p class="text-muted">Ultimate premium quality</p>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li>100% organic certified</li>
+                                <li>Stone-ground perfection</li>
+                                <li>30g finest powder</li>
+                                <li>From Uji, Japan</li>
+                                <li>Ultimate smoothness</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-cta">
+                            <a href="contact.html" class="btn btn-outline-primary w-100 rounded-pill">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="py-5" style="background-color: #FFF8F0;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <div class="text-center">
+                        <div class="about-image rounded-circle mx-auto mb-4" style="width: 300px; height: 300px; background: linear-gradient(45deg, #F7DCDA, #939D7A); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user-circle" style="font-size: 120px; color: #516345;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #516345; font-family: 'Playfair Display', serif;">Hello, Beautiful Soul</h2>
+                    <p class="lead mb-4" style="color: #516345;">
+                        I'm Emma, your matcha-loving companion on this journey of wellness and aesthetic living. My love affair with matcha began in a small café in Tokyo, and I've been sharing the magic ever since.
+                    </p>
+                    <p style="color: #939D7A; font-size: 1.1rem;">
+                        Through this blog, I hope to inspire you to embrace the mindful moments that matcha brings—from the meditative whisking to the first sip of liquid zen. Let's create beautiful, nourishing experiences together.
+                    </p>
+                    <a href="about.html" class="btn btn-lg px-4 py-3 rounded-pill mt-3" style="background-color: #516345; color: white; border: none;">
+                        <i class="fas fa-heart me-2"></i>My Story
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="py-5" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3" style="color: #516345; font-family: 'Playfair Display', serif;">Featured Stories</h2>
+                <p class="lead" style="color: #939D7A;">Dive into our most loved matcha moments and discover your new favorites</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Featured Post 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="card-img-container" style="height: 250px; background: linear-gradient(45deg, #F7DCDA, #FFF8F0); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-coffee" style="font-size: 80px; color: #516345;"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge rounded-pill px-3 py-2 mb-3" style="background-color: #F7DCDA; color: #516345; font-weight: 500;">Recipe</span>
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Perfect Morning Matcha Latte</h5>
+                            <p class="card-text" style="color: #939D7A;">Start your day with this creamy, dreamy matcha latte that's both Instagram-worthy and incredibly delicious. A morning ritual you'll love.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">March 15, 2024 • 5 min read</small>
+                                <a href="blog/matcha-latte-recipe.html" class="btn btn-sm rounded-pill px-3" style="background-color: #516345; color: white; border: none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Post 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="card-img-container" style="height: 250px; background: linear-gradient(45deg, #939D7A, #516345); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-spa" style="font-size: 80px; color: #F7DCDA;"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge rounded-pill px-3 py-2 mb-3" style="background-color: #F7DCDA; color: #516345; font-weight: 500;">Wellness</span>
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Matcha Face Mask for Glowing Skin</h5>
+                            <p class="card-text" style="color: #939D7A;">Discover the secret to radiant skin with this DIY matcha face mask. Natural, gentle, and perfect for your self-care Sunday routine.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">March 12, 2024 • 4 min read</small>
+                                <a href="blog/matcha-skincare.html" class="btn btn-sm rounded-pill px-3" style="background-color: #516345; color: white; border: none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Post 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="card-img-container" style="height: 250px; background: linear-gradient(45deg, #FFF8F0, #F7DCDA); display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-heart" style="font-size: 80px; color: #516345;"></i>
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge rounded-pill px-3 py-2 mb-3" style="background-color: #F7DCDA; color: #516345; font-weight: 500;">Lifestyle</span>
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Creating Your Mindful Morning Routine</h5>
+                            <p class="card-text" style="color: #939D7A;">Transform your mornings with intention and grace. Learn how matcha can become the centerpiece of your daily mindfulness practice.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">March 10, 2024 • 7 min read</small>
+                                <a href="blog/morning-routine.html" class="btn btn-sm rounded-pill px-3" style="background-color: #516345; color: white; border: none;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="blog.html" class="btn btn-lg px-5 py-3 rounded-pill" style="background-color: #F7DCDA; color: #516345; border: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fas fa-arrow-right me-2"></i>View All Posts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #516345 0%, #939D7A 100%);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #F7DCDA; font-family: 'Playfair Display', serif;">
+                        Join Our Matcha Family
+                    </h2>
+                    <p class="lead mb-4" style="color: #FFF8F0;">
+                        Get weekly doses of matcha inspiration, exclusive recipes, and wellness tips delivered straight to your inbox. Plus, receive my free Matcha Beginner's Guide!
+                    </p>
+                    <form class="newsletter-form">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control form-control-lg rounded-start-pill" placeholder="Enter your email address" style="border: none; padding: 15px 20px;">
+                                    <button class="btn btn-lg rounded-end-pill px-4" type="submit" style="background-color: #F7DCDA; color: #516345; border: none; font-weight: 600;">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <small style="color: #FFF8F0; opacity: 0.8;">
+                            <i class="fas fa-lock me-1"></i>Your email is safe with us. Unsubscribe anytime.
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Preview -->
+    <section class="py-5" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3" style="color: #516345; font-family: 'Playfair Display', serif;">
+                    Follow the Journey
+                </h2>
+                <p class="lead" style="color: #939D7A;">Connect with our matcha community on Instagram</p>
+                <a href="#" class="btn btn-lg px-4 py-3 rounded-pill" style="background-color: #F7DCDA; color: #516345; border: none; font-weight: 500;">
+                    <i class="fab fa-instagram me-2"></i>@matchamoments
+                </a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="instagram-post rounded" style="aspect-ratio: 1; background: linear-gradient(45deg, #F7DCDA, #FFF8F0); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-leaf" style="font-size: 40px; color: #516345;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="instagram-post rounded" style="aspect-ratio: 1; background: linear-gradient(45deg, #939D7A, #516345); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-coffee" style="font-size: 40px; color: #F7DCDA;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="instagram-post rounded" style="aspect-ratio: 1; background: linear-gradient(45deg, #FFF8F0, #F7DCDA); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-heart" style="font-size: 40px; color: #516345;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="instagram-post rounded" style="aspect-ratio: 1; background: linear-gradient(45deg, #516345, #939D7A); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-spa" style="font-size: 40px; color: #F7DCDA;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="instagram-post rounded" style="aspect-ratio: 1; background: linear-gradient(45deg, #F7DCDA, #939D7A); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-camera" style="font-size: 40px; color: #516345;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="instagram-post rounded" style="aspect-ratio: 1; background: linear-gradient(45deg, #939D7A, #F7DCDA); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-seedling" style="font-size: 40px; color: #516345;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #516345;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3" style="color: #F7DCDA; font-family: 'Playfair Display', serif;">Matcha Moments</h5>
+                    <p style="color: #FFF8F0; opacity: 0.9;">
+                        Your guide to aesthetic matcha living, mindful moments, and beautiful wellness practices.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Explore</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Blog</a></li>
+                        <li class="mb-2"><a href="recipes.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Recipes</a></li>
+                        <li class="mb-2"><a href="guide.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Matcha Guide</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Recipes</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Wellness</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Lifestyle</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Stay Connected</h6>
+                    <p style="color: #FFF8F0; opacity: 0.9; font-size: 0.9rem;">
+                        Join our newsletter for weekly matcha inspiration and exclusive content.
+                    </p>
+                    <form class="footer-newsletter">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" style="border: none; border-radius: 25px 0 0 25px;">
+                            <button class="btn" type="submit" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 0 25px 25px 0;">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr style="border-color: #939D7A; opacity: 0.3;">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">
+                        © 2024 Matcha Moments. Made with 💚 and lots of matcha.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none me-3" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
