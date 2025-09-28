@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Matcha Moments - Get in Touch</title>
+    <meta name="description" content="Get in touch with Emma from Matcha Moments. Send us your questions, collaboration ideas, or just say hello. We'd love to hear from you!">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #F7DCDA;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: #516345; font-family: 'Playfair Display', serif; font-size: 1.8rem;">
+                🍃 Matcha Moments
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: #516345;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="index.html" style="color: #516345;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="blog.html" style="color: #516345;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="recipes.html" style="color: #516345;">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="about.html" style="color: #516345;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="contact.html" style="color: #516345;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="crm/login.php" style="color: #516345;" title="Admin Access">
+                            <i class="fas fa-user-shield"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #F7DCDA 0%, #FFF8F0 100%); margin-top: 76px;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #516345; font-family: 'Playfair Display', serif;">
+                        Let's Connect
+                    </h1>
+                    <p class="lead" style="color: #939D7A;">
+                        I'd love to hear from you! Whether you have questions about matcha, want to collaborate, or just want to share your own matcha journey, I'm here to listen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form-container p-5 rounded-4" style="background-color: #FFF8F0; box-shadow: 0 10px 30px rgba(81, 99, 69, 0.1);" data-aos="fade-up">
+                        <h2 class="text-center fw-bold mb-4" style="color: #516345; font-family: 'Playfair Display', serif;">Send Me a Message</h2>
+
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label fw-medium" style="color: #516345;">First Name *</label>
+                                    <input type="text" class="form-control form-control-lg" id="firstName" name="firstName" required style="border-radius: 12px; border-color: #F7DCDA; padding: 15px 20px;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label fw-medium" style="color: #516345;">Last Name</label>
+                                    <input type="text" class="form-control form-control-lg" id="lastName" name="lastName" style="border-radius: 12px; border-color: #F7DCDA; padding: 15px 20px;">
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="email" class="form-label fw-medium" style="color: #516345;">Email Address *</label>
+                                <input type="email" class="form-control form-control-lg" id="email" name="email" required style="border-radius: 12px; border-color: #F7DCDA; padding: 15px 20px;">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="subject" class="form-label fw-medium" style="color: #516345;">Subject *</label>
+                                <select class="form-select form-select-lg" id="subject" name="subject" required style="border-radius: 12px; border-color: #F7DCDA; padding: 15px 20px;">
+                                    <option value="">Choose a topic...</option>
+                                    <option value="general">General Question</option>
+                                    <option value="recipe">Recipe Question</option>
+                                    <option value="collaboration">Collaboration Inquiry</option>
+                                    <option value="product-review">Product Review Request</option>
+                                    <option value="speaking">Speaking Opportunity</option>
+                                    <option value="media">Media & Press</option>
+                                    <option value="feedback">Website Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-medium" style="color: #516345;">Your Message *</label>
+                                <textarea class="form-control form-control-lg" id="message" name="message" rows="6" required placeholder="Tell me about your matcha journey, ask a question, or share your thoughts..." style="border-radius: 12px; border-color: #F7DCDA; padding: 15px 20px; resize: vertical;"></textarea>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" style="border-color: #516345;">
+                                    <label class="form-check-label" for="newsletter" style="color: #939D7A;">
+                                        I'd like to receive the weekly Matcha Moments newsletter with exclusive recipes and tips
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-lg px-5 py-3 rounded-pill" style="background-color: #516345; color: white; border: none; font-weight: 600; transition: all 0.3s ease;">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-5" style="background-color: #F7DCDA;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3" style="color: #516345; font-family: 'Playfair Display', serif;">Other Ways to Connect</h2>
+                        <p class="lead" style="color: #516345;">Follow along for daily matcha inspiration and behind-the-scenes moments</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Email -->
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-card p-4 h-100 rounded-3 text-center" style="background-color: #FFFFFF; transition: transform 0.3s ease;">
+                                <div class="contact-icon mb-3">
+                                    <i class="fas fa-envelope" style="font-size: 3rem; color: #516345;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3" style="color: #516345;">Email</h5>
+                                <p style="color: #939D7A; margin-bottom: 1rem;">For collaborations and press inquiries</p>
+                                <a href="mailto:hello@matchamoments.com" class="btn btn-outline-primary btn-sm rounded-pill" style="border-color: #516345; color: #516345;">
+                                    hello@matchamoments.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Instagram -->
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-card p-4 h-100 rounded-3 text-center" style="background-color: #FFFFFF; transition: transform 0.3s ease;">
+                                <div class="contact-icon mb-3">
+                                    <i class="fab fa-instagram" style="font-size: 3rem; color: #516345;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3" style="color: #516345;">Instagram</h5>
+                                <p style="color: #939D7A; margin-bottom: 1rem;">Daily matcha moments and aesthetic inspiration</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill" style="border-color: #516345; color: #516345;">
+                                    @matchamoments
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Pinterest -->
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                            <div class="contact-card p-4 h-100 rounded-3 text-center" style="background-color: #FFFFFF; transition: transform 0.3s ease;">
+                                <div class="contact-icon mb-3">
+                                    <i class="fab fa-pinterest" style="font-size: 3rem; color: #516345;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3" style="color: #516345;">Pinterest</h5>
+                                <p style="color: #939D7A; margin-bottom: 1rem;">Recipe collections and lifestyle boards</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill" style="border-color: #516345; color: #516345;">
+                                    Follow Boards
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- TikTok -->
+                        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                            <div class="contact-card p-4 h-100 rounded-3 text-center" style="background-color: #FFFFFF; transition: transform 0.3s ease;">
+                                <div class="contact-icon mb-3">
+                                    <i class="fab fa-tiktok" style="font-size: 3rem; color: #516345;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3" style="color: #516345;">TikTok</h5>
+                                <p style="color: #939D7A; margin-bottom: 1rem;">Quick matcha tips and behind-the-scenes</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill" style="border-color: #516345; color: #516345;">
+                                    @matchamoments
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3" style="color: #516345; font-family: 'Playfair Display', serif;">Frequently Asked Questions</h2>
+                        <p class="lead" style="color: #939D7A;">Quick answers to common questions</p>
+                    </div>
+
+                    <div class="accordion" id="faqAccordion" data-aos="fade-up">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item mb-3" style="border: none; border-radius: 12px; box-shadow: 0 2px 10px rgba(81, 99, 69, 0.1);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="background-color: #FFF8F0; border-radius: 12px; color: #516345; border: none;">
+                                    How long does it typically take to receive a response?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color: #939D7A;">
+                                    I aim to respond to all messages within 48 hours during weekdays. For time-sensitive collaboration inquiries, please mention "URGENT" in your subject line.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item mb-3" style="border: none; border-radius: 12px; box-shadow: 0 2px 10px rgba(81, 99, 69, 0.1);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="background-color: #FFF8F0; border-radius: 12px; color: #516345; border: none;">
+                                    Do you accept product collaboration requests?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color: #939D7A;">
+                                    Yes! I love trying new matcha products and brands that align with our values of quality and sustainability. Please include product details and your collaboration proposal in your message.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item mb-3" style="border: none; border-radius: 12px; box-shadow: 0 2px 10px rgba(81, 99, 69, 0.1);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="background-color: #FFF8F0; border-radius: 12px; color: #516345; border: none;">
+                                    Can you help me with recipe troubleshooting?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color: #939D7A;">
+                                    Absolutely! I love helping fellow matcha enthusiasts perfect their techniques. Please describe what happened and include photos if possible for the best advice.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item mb-3" style="border: none; border-radius: 12px; box-shadow: 0 2px 10px rgba(81, 99, 69, 0.1);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" style="background-color: #FFF8F0; border-radius: 12px; color: #516345; border: none;">
+                                    Are you available for speaking events or workshops?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color: #939D7A;">
+                                    Yes! I offer virtual and in-person workshops on matcha preparation, wellness, and mindful living. Please use the "Speaking Opportunity" subject for these inquiries.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item" style="border: none; border-radius: 12px; box-shadow: 0 2px 10px rgba(81, 99, 69, 0.1);">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" style="background-color: #FFF8F0; border-radius: 12px; color: #516345; border: none;">
+                                    Do you offer personalized matcha consultations?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body" style="color: #939D7A;">
+                                    I occasionally offer one-on-one consultations for those looking to deepen their matcha practice. Please mention your interest in the contact form and I'll send you details about availability and pricing.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #516345 0%, #939D7A 100%);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #F7DCDA; font-family: 'Playfair Display', serif;">
+                        Stay in Touch
+                    </h2>
+                    <p class="lead mb-4" style="color: #FFF8F0;">
+                        Join our newsletter for weekly matcha inspiration, exclusive recipes, and personal notes from Emma.
+                    </p>
+                    <form class="newsletter-form">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control form-control-lg rounded-start-pill" placeholder="Enter your email address" style="border: none; padding: 15px 20px;">
+                                    <button class="btn btn-lg rounded-end-pill px-4" type="submit" style="background-color: #F7DCDA; color: #516345; border: none; font-weight: 600;">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <small style="color: #FFF8F0; opacity: 0.8;">
+                            <i class="fas fa-lock me-1"></i>Your email is safe with us. Unsubscribe anytime.
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #516345;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3" style="color: #F7DCDA; font-family: 'Playfair Display', serif;">Matcha Moments</h5>
+                    <p style="color: #FFF8F0; opacity: 0.9;">
+                        Your guide to aesthetic matcha living, mindful moments, and beautiful wellness practices.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Explore</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Blog</a></li>
+                        <li class="mb-2"><a href="recipes.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Recipes</a></li>
+                        <li class="mb-2"><a href="guide.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Matcha Guide</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Recipes</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Wellness</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Lifestyle</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Stay Connected</h6>
+                    <p style="color: #FFF8F0; opacity: 0.9; font-size: 0.9rem;">
+                        Join our newsletter for weekly matcha inspiration and exclusive content.
+                    </p>
+                    <form class="footer-newsletter">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" style="border: none; border-radius: 25px 0 0 25px;">
+                            <button class="btn" type="submit" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 0 25px 25px 0;">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr style="border-color: #939D7A; opacity: 0.3;">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">
+                        © 2024 Matcha Moments. Made with 💚 and lots of matcha.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none me-3" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Contact Form JS -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(this);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                // Show success message
+                if (window.MatchaMoments) {
+                    window.MatchaMoments.showNotification(
+                        'Thank you for your message! I\'ll get back to you within 48 hours.',
+                        'success'
+                    );
+                }
+
+                // Reset form
+                this.reset();
+
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 2000);
+        });
+
+        // Add hover effects to contact cards
+        document.querySelectorAll('.contact-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 30px rgba(81, 99, 69, 0.15)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

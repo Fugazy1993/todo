@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Recipes | Matcha Moments - Delicious & Aesthetic Recipe Collection</title>
+    <meta name="description" content="Discover our collection of aesthetic matcha recipes from lattes to desserts. Easy-to-follow instructions with beautiful photography and wellness benefits.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #F7DCDA;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: #516345; font-family: 'Playfair Display', serif; font-size: 1.8rem;">
+                🍃 Matcha Moments
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: #516345;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="index.html" style="color: #516345;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="blog.html" style="color: #516345;">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="recipes.html" style="color: #516345;">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="about.html" style="color: #516345;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="contact.html" style="color: #516345;">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="crm/login.php" style="color: #516345;" title="Admin Access">
+                            <i class="fas fa-user-shield"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #F7DCDA 0%, #FFF8F0 100%); margin-top: 76px;">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-4" style="color: #516345; font-family: 'Playfair Display', serif;">
+                        Delicious Matcha Recipes
+                    </h1>
+                    <p class="lead" style="color: #939D7A;">
+                        From creamy lattes to decadent desserts, discover our collection of aesthetic matcha recipes that nourish both body and soul.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4" style="background-color: #FFFFFF; border-bottom: 1px solid #F5F5F5;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <span class="input-group-text" style="background-color: #F7DCDA; border-color: #F7DCDA; color: #516345;">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control" id="recipeSearchInput" placeholder="Search recipes..." style="border-color: #F7DCDA;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="filter-buttons text-lg-end mt-3 mt-lg-0">
+                        <button class="btn btn-filter active me-2 mb-2" data-category="all" style="background-color: #516345; color: white; border: none; border-radius: 25px; padding: 8px 20px;">All Recipes</button>
+                        <button class="btn btn-filter me-2 mb-2" data-category="drinks" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 25px; padding: 8px 20px;">Drinks</button>
+                        <button class="btn btn-filter me-2 mb-2" data-category="desserts" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 25px; padding: 8px 20px;">Desserts</button>
+                        <button class="btn btn-filter me-2 mb-2" data-category="breakfast" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 25px; padding: 8px 20px;">Breakfast</button>
+                        <button class="btn btn-filter mb-2" data-category="skincare" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 25px; padding: 8px 20px;">Skincare</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Grid -->
+    <section class="py-5" style="background-color: #FFFFFF;">
+        <div class="container">
+            <div class="row g-4" id="recipeGrid">
+                <!-- Recipe 1: Matcha Latte -->
+                <div class="col-lg-4 col-md-6 recipe-item" data-category="drinks" data-difficulty="easy" data-aos="fade-up" data-aos-delay="100">
+                    <div class="recipe-card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="recipe-img-container" style="height: 250px; background: linear-gradient(45deg, #F7DCDA, #FFF8F0); display: flex; align-items: center; justify-content: center; position: relative;">
+                            <i class="fas fa-coffee" style="font-size: 80px; color: #516345;"></i>
+                            <div class="recipe-overlay" style="position: absolute; top: 15px; right: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #516345; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-clock me-1"></i>5 min
+                                </span>
+                            </div>
+                            <div class="difficulty-badge" style="position: absolute; top: 15px; left: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #10B981; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-leaf me-1"></i>Easy
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Perfect Morning Matcha Latte</h5>
+                            <p class="card-text mb-3" style="color: #939D7A;">Creamy, dreamy matcha latte that's Instagram-worthy and incredibly delicious. Perfect for starting your day mindfully.</p>
+                            <div class="recipe-meta d-flex justify-content-between align-items-center mb-3" style="font-size: 0.9rem; color: #939D7A;">
+                                <span><i class="fas fa-users me-1" style="color: #516345;"></i>1 serving</span>
+                                <span><i class="fas fa-fire me-1" style="color: #516345;"></i>120 cal</span>
+                            </div>
+                            <div class="recipe-actions d-flex justify-content-between">
+                                <a href="blog/matcha-latte-recipe.html" class="btn btn-outline-primary btn-sm rounded-pill px-3">View Recipe</a>
+                                <div class="recipe-actions-right">
+                                    <button class="btn btn-sm" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Save Recipe">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm ms-2" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Share Recipe">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2: Matcha Cookies -->
+                <div class="col-lg-4 col-md-6 recipe-item" data-category="desserts" data-difficulty="medium" data-aos="fade-up" data-aos-delay="200">
+                    <div class="recipe-card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="recipe-img-container" style="height: 250px; background: linear-gradient(45deg, #516345, #F7DCDA); display: flex; align-items: center; justify-content: center; position: relative;">
+                            <i class="fas fa-cookie-bite" style="font-size: 80px; color: #FFF8F0;"></i>
+                            <div class="recipe-overlay" style="position: absolute; top: 15px; right: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #516345; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-clock me-1"></i>45 min
+                                </span>
+                            </div>
+                            <div class="difficulty-badge" style="position: absolute; top: 15px; left: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #F59E0B; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-star me-1"></i>Medium
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Soft Matcha Sugar Cookies</h5>
+                            <p class="card-text mb-3" style="color: #939D7A;">Cloud-like matcha cookies with the perfect balance of sweet and earthy. Ideal for afternoon tea or gifting.</p>
+                            <div class="recipe-meta d-flex justify-content-between align-items-center mb-3" style="font-size: 0.9rem; color: #939D7A;">
+                                <span><i class="fas fa-users me-1" style="color: #516345;"></i>24 cookies</span>
+                                <span><i class="fas fa-fire me-1" style="color: #516345;"></i>85 cal</span>
+                            </div>
+                            <div class="recipe-actions d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill px-3">View Recipe</a>
+                                <div class="recipe-actions-right">
+                                    <button class="btn btn-sm" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Save Recipe">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm ms-2" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Share Recipe">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3: Matcha Ice Cream -->
+                <div class="col-lg-4 col-md-6 recipe-item" data-category="desserts" data-difficulty="easy" data-aos="fade-up" data-aos-delay="300">
+                    <div class="recipe-card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="recipe-img-container" style="height: 250px; background: linear-gradient(45deg, #FFF8F0, #516345); display: flex; align-items: center; justify-content: center; position: relative;">
+                            <i class="fas fa-ice-cream" style="font-size: 80px; color: #F7DCDA;"></i>
+                            <div class="recipe-overlay" style="position: absolute; top: 15px; right: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #516345; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-clock me-1"></i>20 min
+                                </span>
+                            </div>
+                            <div class="difficulty-badge" style="position: absolute; top: 15px; left: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #10B981; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-leaf me-1"></i>Easy
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">No-Churn Matcha Ice Cream</h5>
+                            <p class="card-text mb-3" style="color: #939D7A;">Creamy matcha ice cream that requires no special equipment. Perfect for hot summer days and satisfying cravings.</p>
+                            <div class="recipe-meta d-flex justify-content-between align-items-center mb-3" style="font-size: 0.9rem; color: #939D7A;">
+                                <span><i class="fas fa-users me-1" style="color: #516345;"></i>6 servings</span>
+                                <span><i class="fas fa-fire me-1" style="color: #516345;"></i>180 cal</span>
+                            </div>
+                            <div class="recipe-actions d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill px-3">View Recipe</a>
+                                <div class="recipe-actions-right">
+                                    <button class="btn btn-sm" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Save Recipe">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm ms-2" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Share Recipe">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4: Matcha Smoothie Bowl -->
+                <div class="col-lg-4 col-md-6 recipe-item" data-category="breakfast" data-difficulty="easy" data-aos="fade-up" data-aos-delay="400">
+                    <div class="recipe-card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="recipe-img-container" style="height: 250px; background: linear-gradient(45deg, #939D7A, #FFF8F0); display: flex; align-items: center; justify-content: center; position: relative;">
+                            <i class="fas fa-seedling" style="font-size: 80px; color: #516345;"></i>
+                            <div class="recipe-overlay" style="position: absolute; top: 15px; right: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #516345; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-clock me-1"></i>10 min
+                                </span>
+                            </div>
+                            <div class="difficulty-badge" style="position: absolute; top: 15px; left: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #10B981; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-leaf me-1"></i>Easy
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Aesthetic Matcha Smoothie Bowl</h5>
+                            <p class="card-text mb-3" style="color: #939D7A;">Instagram-worthy smoothie bowl packed with antioxidants and natural energy. Perfect for a nourishing breakfast.</p>
+                            <div class="recipe-meta d-flex justify-content-between align-items-center mb-3" style="font-size: 0.9rem; color: #939D7A;">
+                                <span><i class="fas fa-users me-1" style="color: #516345;"></i>1 serving</span>
+                                <span><i class="fas fa-fire me-1" style="color: #516345;"></i>250 cal</span>
+                            </div>
+                            <div class="recipe-actions d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill px-3">View Recipe</a>
+                                <div class="recipe-actions-right">
+                                    <button class="btn btn-sm" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Save Recipe">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm ms-2" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Share Recipe">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5: Matcha Face Mask -->
+                <div class="col-lg-4 col-md-6 recipe-item" data-category="skincare" data-difficulty="easy" data-aos="fade-up" data-aos-delay="500">
+                    <div class="recipe-card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="recipe-img-container" style="height: 250px; background: linear-gradient(45deg, #939D7A, #516345); display: flex; align-items: center; justify-content: center; position: relative;">
+                            <i class="fas fa-spa" style="font-size: 80px; color: #F7DCDA;"></i>
+                            <div class="recipe-overlay" style="position: absolute; top: 15px; right: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #516345; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-clock me-1"></i>15 min
+                                </span>
+                            </div>
+                            <div class="difficulty-badge" style="position: absolute; top: 15px; left: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #10B981; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-leaf me-1"></i>Easy
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Matcha Glow Face Mask</h5>
+                            <p class="card-text mb-3" style="color: #939D7A;">DIY matcha face mask for radiant, glowing skin. Natural antioxidants for your weekly self-care routine.</p>
+                            <div class="recipe-meta d-flex justify-content-between align-items-center mb-3" style="font-size: 0.9rem; color: #939D7A;">
+                                <span><i class="fas fa-users me-1" style="color: #516345;"></i>1 mask</span>
+                                <span><i class="fas fa-heart me-1" style="color: #516345;"></i>Self-care</span>
+                            </div>
+                            <div class="recipe-actions d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill px-3">View Recipe</a>
+                                <div class="recipe-actions-right">
+                                    <button class="btn btn-sm" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Save Recipe">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm ms-2" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Share Recipe">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6: Matcha Pancakes -->
+                <div class="col-lg-4 col-md-6 recipe-item" data-category="breakfast" data-difficulty="medium" data-aos="fade-up" data-aos-delay="600">
+                    <div class="recipe-card border-0 h-100 shadow-sm" style="border-radius: 15px; overflow: hidden; transition: transform 0.3s ease;">
+                        <div class="recipe-img-container" style="height: 250px; background: linear-gradient(45deg, #F7DCDA, #939D7A); display: flex; align-items: center; justify-content: center; position: relative;">
+                            <i class="fas fa-birthday-cake" style="font-size: 80px; color: #516345;"></i>
+                            <div class="recipe-overlay" style="position: absolute; top: 15px; right: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #516345; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-clock me-1"></i>25 min
+                                </span>
+                            </div>
+                            <div class="difficulty-badge" style="position: absolute; top: 15px; left: 15px;">
+                                <span class="badge rounded-pill" style="background-color: #F59E0B; color: white; padding: 8px 12px;">
+                                    <i class="fas fa-star me-1"></i>Medium
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold mb-3" style="color: #516345;">Fluffy Matcha Pancakes</h5>
+                            <p class="card-text mb-3" style="color: #939D7A;">Stack of fluffy, cloud-like matcha pancakes perfect for weekend brunch. Aesthetic and delicious.</p>
+                            <div class="recipe-meta d-flex justify-content-between align-items-center mb-3" style="font-size: 0.9rem; color: #939D7A;">
+                                <span><i class="fas fa-users me-1" style="color: #516345;"></i>4 servings</span>
+                                <span><i class="fas fa-fire me-1" style="color: #516345;"></i>320 cal</span>
+                            </div>
+                            <div class="recipe-actions d-flex justify-content-between">
+                                <a href="#" class="btn btn-outline-primary btn-sm rounded-pill px-3">View Recipe</a>
+                                <div class="recipe-actions-right">
+                                    <button class="btn btn-sm" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Save Recipe">
+                                        <i class="fas fa-heart"></i>
+                                    </button>
+                                    <button class="btn btn-sm ms-2" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 50%; width: 35px; height: 35px;" title="Share Recipe">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <button class="btn btn-lg px-5 py-3 rounded-pill" id="loadMoreRecipes" style="background-color: #F7DCDA; color: #516345; border: none; font-weight: 500; transition: all 0.3s ease;">
+                    <i class="fas fa-plus me-2"></i>Load More Recipes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Tips Section -->
+    <section class="py-5" style="background-color: #FFF8F0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center mb-5" data-aos="fade-up">
+                        <h2 class="display-5 fw-bold mb-3" style="color: #516345; font-family: 'Playfair Display', serif;">Pro Matcha Tips</h2>
+                        <p class="lead" style="color: #939D7A;">Essential tips to elevate your matcha cooking and create perfect results every time</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="tip-card p-4 h-100 rounded-3 text-center" style="background-color: #F7DCDA;">
+                                <div class="tip-icon mb-3">
+                                    <i class="fas fa-thermometer-half" style="font-size: 3rem; color: #516345;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3" style="color: #516345;">Perfect Temperature</h5>
+                                <p style="color: #516345;">Never use boiling water with matcha. 175°F/80°C is ideal for preserving the delicate flavor and preventing bitterness.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="tip-card p-4 h-100 rounded-3 text-center" style="background-color: #F7DCDA;">
+                                <div class="tip-icon mb-3">
+                                    <i class="fas fa-star" style="font-size: 3rem; color: #516345;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3" style="color: #516345;">Quality Matters</h5>
+                                <p style="color: #516345;">Invest in ceremonial-grade matcha for drinking and culinary-grade for baking. Quality makes all the difference in taste.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="tip-card p-4 h-100 rounded-3 text-center" style="background-color: #F7DCDA;">
+                                <div class="tip-icon mb-3">
+                                    <i class="fas fa-eye" style="font-size: 3rem; color: #516345;"></i>
+                                </div>
+                                <h5 class="fw-bold mb-3" style="color: #516345;">Sift for Smoothness</h5>
+                                <p style="color: #516345;">Always sift matcha powder to eliminate lumps and achieve that perfectly smooth, creamy texture in all your recipes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #516345 0%, #939D7A 100%);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4" style="color: #F7DCDA; font-family: 'Playfair Display', serif;">
+                        Get New Recipes Weekly
+                    </h2>
+                    <p class="lead mb-4" style="color: #FFF8F0;">
+                        Be the first to try our latest matcha creations and receive exclusive recipe collections.
+                    </p>
+                    <form class="newsletter-form">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control form-control-lg rounded-start-pill" placeholder="Enter your email address" style="border: none; padding: 15px 20px;">
+                                    <button class="btn btn-lg rounded-end-pill px-4" type="submit" style="background-color: #F7DCDA; color: #516345; border: none; font-weight: 600;">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <small style="color: #FFF8F0; opacity: 0.8;">
+                            <i class="fas fa-lock me-1"></i>Your email is safe with us. Unsubscribe anytime.
+                        </small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #516345;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3" style="color: #F7DCDA; font-family: 'Playfair Display', serif;">Matcha Moments</h5>
+                    <p style="color: #FFF8F0; opacity: 0.9;">
+                        Your guide to aesthetic matcha living, mindful moments, and beautiful wellness practices.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none me-3" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none" style="color: #F7DCDA; font-size: 1.5rem;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Explore</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="blog.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Blog</a></li>
+                        <li class="mb-2"><a href="recipes.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Recipes</a></li>
+                        <li class="mb-2"><a href="guide.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Matcha Guide</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Drinks</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Desserts</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Breakfast</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.9;">Skincare</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3" style="color: #F7DCDA;">Stay Connected</h6>
+                    <p style="color: #FFF8F0; opacity: 0.9; font-size: 0.9rem;">
+                        Join our newsletter for weekly matcha inspiration and exclusive content.
+                    </p>
+                    <form class="footer-newsletter">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" style="border: none; border-radius: 25px 0 0 25px;">
+                            <button class="btn" type="submit" style="background-color: #F7DCDA; color: #516345; border: none; border-radius: 0 25px 25px 0;">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr style="border-color: #939D7A; opacity: 0.3;">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">
+                        © 2024 Matcha Moments. Made with 💚 and lots of matcha.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none me-3" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none" style="color: #FFF8F0; opacity: 0.7; font-size: 0.9rem;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+</html>
